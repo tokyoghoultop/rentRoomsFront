@@ -1,0 +1,32 @@
+.appbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: #1976d2;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.avatar-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 40px;
+}
+
+.avatar-text {
+  color: white;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.drawer {
+  transition: width 0.3s;
+  box-sizing: border-box;
+  margin-top: 64px; // เว้นจาก AppBar
+}
