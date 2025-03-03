@@ -1,5 +1,5 @@
 # ใช้ Node.js เป็น base image สำหรับการ build
-FROM node:18-alpine AS build
+FROM node:22-alpine AS build
 
 # ตั้งค่า Working Directory
 WORKDIR /app
