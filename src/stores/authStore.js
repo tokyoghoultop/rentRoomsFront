@@ -11,6 +11,7 @@ const useAuthStore = create((set) => ({
     clearToken: () => {
         localStorage.removeItem('authToken');  // ลบ token ออกจาก localStorage
         set({ token: null });
+        window.location.href = '/'
     },
 }));
 

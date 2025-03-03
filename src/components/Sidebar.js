@@ -90,16 +90,16 @@ export default function Sidebar() {
             {open && <ListItemText primary="หน้าแรก" />}
           </ListItem>
 
-          {/* แสดงเมนูอื่นเฉพาะเมื่อมี token */}
-          {token && (
-            <>
-              <ListItem button component={Link} to="/mybookings">
+          <ListItem button component={Link} to="/mybookings">
                 <ListItemIcon sx={{ margin: 1 }}>
                   <BookmarksIcon />
                 </ListItemIcon>
                 {open && <ListItemText primary="การจองของฉัน" />}
-              </ListItem>
+            </ListItem>
 
+          {/* แสดงเมนูอื่นเฉพาะเมื่อมี token */}
+          {token && (
+            <>
               {isAdmin && (
                 <>
                   <ListItem button component={Link} to="/bookings">
