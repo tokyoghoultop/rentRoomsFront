@@ -120,7 +120,7 @@ function AddEditRoomForm() {
             sx={{ marginBottom: 2 }}
           />
           <TextField
-            label="Location"
+            label="Price"
             name="location"
             value={formData.location}
             onChange={handleChange}

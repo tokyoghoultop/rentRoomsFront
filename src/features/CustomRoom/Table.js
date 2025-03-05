@@ -80,7 +80,7 @@ function CustomRoomTable() {
               <TableCell>Room Name</TableCell>
               <TableCell>Status</TableCell>
               <TableCell>Capacity</TableCell>
-              <TableCell>Location</TableCell>
+              <TableCell>Price</TableCell>
               <TableCell>Description</TableCell>
               <TableCell align="center">Actions</TableCell>
             </TableRow>

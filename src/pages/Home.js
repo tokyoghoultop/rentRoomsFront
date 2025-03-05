@@ -53,10 +53,13 @@ function Home() {
                     {room.roomName}
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    Capacity: {room.capacity}
+                  {room.description}
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    Location: {room.location}
+                  Capacity: {room.capacity}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                  Price: {room.location}
                   </Typography>
 
                   <div
@@ -79,6 +82,7 @@ function Home() {
                       onClick={() => navigate(`/calendar/${room.id}`)}
                     >
                       {room.status === "Available" ? "Book Now" : "Occupied"}
+                      {room.id}
                     </Button>
                   </div>
                 </CardContent>

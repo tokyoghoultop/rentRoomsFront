@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001/api';
+const API_URL = process.env.REACT_APP_API_BASE_URL;
 
 // ตรวจสอบช่วงเวลาที่ถูกจองไปแล้วสำหรับวันที่และห้องที่ระบุ
 export const checkTimeSlotsApi = async (date, roomId) => {

@@ -121,8 +121,8 @@ function Calendar() {
           const response = await checkTimeSlotsApi(formattedDate, roomId);
 
           // แปลงข้อมูลให้อยู่ในรูปแบบที่ใช้ในแอพ
-          const bookedSlots = response.bookedTimeSlots.map(timeSlot => ({
-            date: date.toDateString(),
+          const bookedSlots = response?.bookedTimeSlots?.map(timeSlot => ({
+            date: date?.toDateString(),
             time: timeSlot
           }));
 
@@ -339,7 +339,7 @@ function Calendar() {
     const disabledDatesMap = {};
 
     // response.availability เป็น object ที่มี key เป็นวันที่ในรูปแบบ YYYY-MM-DD
-    Object.entries(response.availability).forEach(([dateStr, dayInfo]) => {
+    Object.entries(response?.fullyBookedDates).forEach(([dateStr, dayInfo]) => {
       if (dayInfo.isFullyBooked) {
         // สร้าง Date object จาก string ในรูปแบบ YYYY-MM-DD
         const date = new Date(dateStr + 'T00:00:00');
